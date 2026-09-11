@@ -1,13 +1,12 @@
 export interface Project {
   id: string;
   title: string;
-  category: 'Web Development' | 'Network & Security' | 'Scientific Publication' | 'Documentation';
+  category: 'Web Development' | 'Network & Security' | 'Scientific Publication' | 'Technical Projects';
   role: string;
   description: string;
   coverImage: string;
   techStack: string[];
   externalLink?: string;
-  featured: boolean;
   date: string;
 }
 
@@ -15,107 +14,163 @@ export interface Certificate {
   id: string;
   name: string;
   issuer: string;
-  category: 'Cybersecurity' | 'Network Engineering' | 'IT Support' | 'Leadership';
+  category: string;
   image: string;
-  credentialUrl?: string;
-  issueDate: string;
-  featured: boolean;
+  description: string;
 }
 
 export const PROFILE = {
   name: "Muchamad Gilang Dwi Saputra, S.Kom.",
-  role: "Network Engineering | Cybersecurity | Full-Stack Developer",
-  bio: "Lulusan Sarjana Komputer UMM (IPK 3.83 / Cum Laude). Berpengalaman dalam pengelolaan jaringan LAN/Wi-Fi, pengujian keamanan aplikasi web, serta pengembangan sistem terintegrasi dengan RBAC & secure authentication.",
+  role: "Network Engineering · Network Security · Cybersecurity",
+  bio: "Computer Science graduate with practical experience in IT support, network troubleshooting, web development, role-based systems, and security-focused technical projects.",
+  gpa: "3.83 / 4.00",
   email: "gilangdwisaputra63@gmail.com",
-  phone: "085736426514",
-  location: "Jombang / Malang / Surabaya, Indonesia",
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/in/",
+  linkedin: "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
+  github: "https://github.com/muchamad-gilang-dwi-saputra",
+  instagram: "https://www.instagram.com/muchamad_gilang_dwi_saputra",
 };
+
+export const EXPERIENCES = [
+  {
+    id: "internship-kbs",
+    period: "21 JULY 2025 — 21 AUGUST 2025",
+    role: "IT Support, Network & Web Development Intern",
+    company: "PD Taman Satwa Kebun Binatang Surabaya · IT Team",
+    description: "Supported operational IT activities while contributing to network troubleshooting, end-user technical support, device management, and development of integrated internal web applications.",
+    contributions: [
+      "Monitored and troubleshot internal LAN/Wi-Fi connectivity issues.",
+      "Assisted troubleshooting of MikroTik and Huawei network devices.",
+      "Provided computer troubleshooting and technical support for users.",
+      "Developed 3 integrated PHP and MySQL applications for employees, HRD, and directors.",
+      "Implemented authentication, session management, RBAC, input validation, and approval workflows.",
+      "Presented system development results to the IT team, HRD, and management."
+    ],
+    images: [
+      { src: "/assets/magang.jpg", alt: "IT team discussion during internship" },
+      { src: "/assets/internship-discussion.jpg", alt: "IT internship activity" },
+      { src: "/assets/internship-coding.jpg", alt: "Coding and system development activity" }
+    ]
+  },
+  {
+    id: "workshop-kaliber",
+    period: "31 MAY 2025 · LSO KALIBER",
+    role: "Workshop Event Chairman",
+    company: "Ngoding Cerdas Bareng Python dengan Clean Code, Secure Code dan AI untuk Produktivitas",
+    description: "Led committee coordination and end-to-end event execution, covering team workflow, speaker coordination, participant management, publication, and external communication.",
+    contributions: [
+      "Coordinated the committee and 1 speaker.",
+      "Managed a workshop attended by 50 participants.",
+      "Ensured preparation, execution, and closing activities ran according to plan."
+    ],
+    tags: ["Leadership", "Project Coordination", "Workshop Management"],
+    images: [
+      { src: "/assets/workshop-leader.jpg", alt: "Workshop leadership documentation" }
+    ]
+  }
+];
 
 export const PROJECTS: Project[] = [
   {
-    id: "simpeg-pdts-kbs",
-    title: "Aplikasi Web SIMPEG Terintegrasi (PDTS KBS)",
+    id: "simpeg-karyawan",
+    title: "SIMPEG - Karyawan Role",
     category: "Web Development",
-    role: "Full-Stack Developer & Security Lead (Magang)",
-    description: "Mengembangkan 3 aplikasi web terintegrasi untuk Karyawan, HRD, dan Direktur di Kebun Binatang Surabaya. Dilengkapi fitur RBAC, input validation, approval workflow, dan dashboard pemantauan.",
-    coverImage: "/images/projects/simpeg.jpg",
-    techStack: ["PHP", "MySQL", "RBAC", "Session Management", "Input Validation"],
-    featured: true,
+    role: "ROLE 01",
+    description: "Employee-side interface for submitting and accessing services based on the assigned user role and workflow.",
+    coverImage: "/assets/project-1.jpg",
+    techStack: ["PHP", "MySQL", "User Access", "RBAC"],
     date: "2025"
   },
   {
-    id: "jurnal-sinta-3-hashing",
-    title: "Perbandingan Bcrypt, Argon2, dan PBKDF2 pada Keamanan SIMPEG",
-    category: "Scientific Publication",
-    role: "Penulis Utama — Terindeks SINTA 3",
-    description: "Publikasi ilmiah pada Jurnal Informatika (Vol. 11 No. 2) menganalisis performa dan ketahanan algoritma password hashing pada sistem informasi kepegawaian berbasis web.",
-    coverImage: "/images/projects/journal.jpg",
-    techStack: ["Bcrypt", "Argon2", "PBKDF2", "Web Security", "Python"],
-    externalLink: "https://doi.org/10.30591/jpit.v11i2.10280",
-    featured: true,
-    date: "2026"
-  },
-  {
-    id: "honeypot-network-monitoring",
-    title: "Simulasi Honeypot & Pemantauan Jaringan",
-    category: "Network & Security",
-    role: "Security Researcher",
-    description: "Mengembangkan simulasi honeypot dan port scanning di lingkungan jaringan lokal serta menganalisis lalu lintas data mencurigakan menggunakan Wireshark & Nmap.",
-    coverImage: "/images/projects/honeypot.jpg",
-    techStack: ["Python", "Nmap", "Wireshark", "Network Security"],
-    featured: true,
+    id: "simpeg-hrd",
+    title: "SIMPEG - HRD Management",
+    category: "Web Development",
+    role: "ROLE 02",
+    description: "Administrative interface for managing employee information, leave records, and approval-related workflows.",
+    coverImage: "/assets/project-2.jpg",
+    techStack: ["PHP", "MySQL", "HR Management", "Workflows"],
     date: "2025"
   },
   {
-    id: "cisco-packet-tracer-sim",
-    title: "Simulasi Topologi Jaringan & Segmentation",
-    category: "Network & Security",
-    role: "Network Engineer",
-    description: "Merancang simulasi jaringan enterprise ber skala medium yang menerapkan VLAN, Inter-VLAN routing, Access Control Lists (ACL), serta network segmentation.",
-    coverImage: "/images/projects/cisco-packet.jpg",
-    techStack: ["Cisco Packet Tracer", "VLAN", "Routing", "ACL", "TCP/IP"],
-    featured: false,
+    id: "simpeg-direktur",
+    title: "SIMPEG - Direktur Dashboard",
+    category: "Web Development",
+    role: "ROLE 03",
+    description: "Management-level dashboard for broader information monitoring and oversight of organizational system data.",
+    coverImage: "/assets/project-3.jpg",
+    techStack: ["PHP", "MySQL", "Oversight", "Dashboard"],
     date: "2025"
+  }
+];
+
+export const TECHNICAL_PROJECTS = [
+  {
+    id: "01",
+    title: "Network Simulation & Security",
+    description: "Designed network simulations with VLAN, routing, access control, network segmentation, and connectivity testing.",
+    tags: ["Cisco Packet Tracer", "VLAN", "Routing"]
+  },
+  {
+    id: "02",
+    title: "Honeypot & Network Monitoring",
+    description: "Built local simulations involving honeypot and port scanning activities and analyzed network traffic and activity.",
+    tags: ["Python", "Nmap", "Wireshark"]
+  },
+  {
+    id: "03",
+    title: "Web Application Security Testing",
+    description: "Performed controlled security testing involving SQL Injection, brute-force, XSS simulation, and mitigation analysis.",
+    tags: ["DVWA", "SQLMap", "Hydra"]
+  },
+  {
+    id: "04",
+    title: "WordPress Security & Red Teaming",
+    description: "Practiced WordPress security testing in a controlled environment, including configuration analysis and post-exploitation concepts.",
+    tags: ["WordPress", "Linux", "Red Team"]
   }
 ];
 
 export const CERTIFICATES: Certificate[] = [
   {
-    id: "cert-cyber-threat",
-    name: "Cyber Threat Management",
-    issuer: "Cisco Networking Academy",
+    id: "cert-cisco",
+    name: "Introduction to Cybersecurity",
+    issuer: "CISCO NETWORKING ACADEMY",
     category: "Cybersecurity",
-    image: "/images/certificates/cyber-threat.jpg",
-    issueDate: "2025",
-    featured: true
+    image: "/assets/certificate-cisco.jpg",
+    description: "Foundational cybersecurity learning covering core security concepts and digital risk awareness."
   },
   {
-    id: "cert-network-defense",
-    name: "Network Defense",
-    issuer: "Cisco Networking Academy",
-    category: "Cybersecurity",
-    image: "/images/certificates/network-defense.jpg",
-    issueDate: "2025",
-    featured: true
+    id: "cert-kaliber",
+    name: "Organizational & Leadership Documentation",
+    issuer: "LSO KALIBER",
+    category: "Leadership & Organization",
+    image: "/assets/certificate-kaliber.jpg",
+    description: "Documentation related to organizational activity, leadership, and committee participation."
+  }
+];
+
+export const SKILLS_CATEGORIES = [
+  {
+    title: "Network Engineering",
+    skills: "Computer Networking · TCP/IP · LAN · Wi-Fi · VLAN · Routing · MikroTik · Cisco Packet Tracer · Network Troubleshooting"
   },
   {
-    id: "cert-endpoint-security",
-    name: "Endpoint Security",
-    issuer: "Cisco Networking Academy",
-    category: "Cybersecurity",
-    image: "/images/certificates/endpoint-security.jpg",
-    issueDate: "2025",
-    featured: true
+    title: "Cybersecurity",
+    skills: "Network Security · Web Application Security · Penetration Testing · Nmap · Wireshark · Password Hashing"
   },
   {
-    id: "cert-infoker-kaliber",
-    name: "Ketua Bidang INFOKER - LSO KALIBER",
-    issuer: "LSO KALIBER UMM",
-    category: "Leadership",
-    image: "/images/certificates/infoker-kaliber.jpg",
-    issueDate: "2025",
-    featured: true
+    title: "Programming & Database",
+    skills: "Python · PHP · MySQL · Authentication · Session Management · Input Validation"
+  },
+  {
+    title: "Operating Systems",
+    skills: "Linux · Windows · Basic system administration and technical troubleshooting"
+  },
+  {
+    title: "Leadership & Management",
+    skills: "Leadership · Communication · Teamwork · Project Coordination · Problem Solving · Analytical Thinking"
+  },
+  {
+    title: "Languages",
+    skills: "Bahasa Indonesia (Active) · English (Basic)"
   }
 ];
