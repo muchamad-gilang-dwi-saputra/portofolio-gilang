@@ -1,7 +1,11 @@
 export interface Project {
   id: string;
   title: string;
-  category: 'Web Development' | 'Network & Security' | 'Scientific Publication' | 'Technical Projects';
+  category:
+    | "Web Development"
+    | "Network & Security"
+    | "Scientific Publication"
+    | "Technical Projects";
   role: string;
   description: { id: string; en: string };
   coverImage: string;
@@ -24,211 +28,258 @@ export const PROFILE = {
   gpa: "3.83 / 4.00",
   email: "gilangdwisaputra63@gmail.com",
   phone: "085736426514",
-  linkedin: "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
+  cvPath: "/CV_Muchamad_Gilang_Dwi_Saputra.pdf",
+  linkedin:
+    "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
   github: "https://github.com/muchamad-gilang-dwi-saputra",
   instagram: "https://www.instagram.com/muchamad_gilang_dwi_saputra",
   role: {
-    id: "Spesialis Keamanan Jaringan & Teknik Jaringan",
-    en: "Network Security & Network Engineering Specialist"
+    id: "Spesialis Keamanan Jaringan & Infrastruktur IT",
+    en: "Network Security & IT Infrastructure Specialist",
   },
   bio: {
-    id: "Lulusan Teknik Informatika UMM (IPK 3.83 / Cum Laude). Berpengalaman praktis dalam IT Support, analisis jaringan, pengembangan sistem web berbasis peran (RBAC), serta pengujian keamanan aplikasi.",
-    en: "Computer Science graduate from UMM (GPA 3.83 / Cum Laude). Practical experience in IT Support, network analysis, role-based web systems (RBAC), and application security testing."
-  }
+    id: "Lulusan Teknik Informatika UMM (IPK 3.83 / Predikat Cum Laude). Berfokus pada Keamanan Jaringan, Infrastruktur Sistem, dan Pengujian Keamanan Aplikasi. Memiliki rekam jejak praktis dalam menangani jaringan operasional skala besar, penguatan autentikasi web berbasis peran (RBAC), analisis trafik data, serta riset kriptografi password.",
+    en: "Computer Science graduate from UMM (GPA 3.83 / Cum Laude). Dedicated to Network Security, System Infrastructure, and Application Security Testing. Proven hands-on record in operational network management, role-based web security hardening (RBAC), traffic analysis, and password cryptography research.",
+  },
 };
 
 export const TRANSLATIONS = {
   id: {
-    nav: { about: "Tentang", experience: "Pengalaman", projects: "Proyek", publication: "Publikasi", skills: "Keahlian", credentials: "Sertifikasi", contact: "Kontak" },
-    badge: "TERBUKA UNTUK PELUANG KARIR",
-    heroSubtitle: "PORTOFOLIO PROFESIONAL · 2026",
+    nav: {
+      about: "Profil",
+      experience: "Pengalaman",
+      projects: "Proyek Utama",
+      publication: "Riset Akademik",
+      skills: "Keahlian Teknis",
+      credentials: "Sertifikasi",
+      contact: "Kontak",
+    },
+    badge: "TERBUKA UNTUK PELUANG KARIR PROFESIONAL",
+    heroSubtitle: "REKAPITULASI PORTOFOLIO TEKNIS · 2026",
     ctaConnect: "Hubungi Saya",
-    ctaExplore: "Jelajahi Pengalaman ↗",
+    ctaExplore: "Jelajahi Pengalaman",
     ctaGithub: "Lihat GitHub",
-    metrics: { gpa: "IPK / 4.00", apps: "Aplikasi Web Terintegrasi", research: "Publikasi Jurnal SINTA 3" },
-    aboutTitle: "Pengalaman IT Praktis dengan Kedalaman Teknis.",
-    aboutDesc1: "Saya berfokus pada infrastruktur jaringan, keamanan jaringan, cybersecurity, dan sistem informasi praktis. Pekerjaan saya menggabungkan pemecahan masalah langsung, pengembangan web, kontrol akses berbasis peran (RBAC), Linux, Python, dan pengujian keamanan terinstal.",
-    aboutDesc2: "Saya telah mengemban tugas pengembangan aplikasi web internal, mendukung lingkungan operasional IT, bekerja dengan infrastruktur LAN/Wi-Fi, perangkat MikroTik dan Huawei, serta menyelesaikan proyek keamanan teknis.",
-    expTitle: "Pengalaman Profesional, Teknis, & Kepemimpinan",
-    projTitle: "Sistem Manajemen Karyawan Berbasis Peran (SIMPEG)",
-    projDesc: "Sistem web internal terintegrasi berbasis PHP & MySQL dengan kontrol akses peran (RBAC), alur persetujuan, dan pengolahan data terhubung.",
-    pubTitle: "Karya Akademik & Riset Keamanan Aplikasi",
-    pubDetails: "Riset mandiri membandingkan algoritma hashing password Bcrypt, Argon2, dan PBKDF2 dalam konteks keamanan autentikasi sistem informasi kepegawaian berbasis web.",
-    techProjTitle: "Praktik Keamanan & Jaringan Terkontrol",
-    skillsTitle: "Kumpulan Keahlian Teknis",
-    credTitle: "Sertifikasi & Dokumentasi Organisasi",
-    contactTitle: "Mari Membangun Koneksi Profesional",
-    contactDesc: "Terbuka untuk jejaring profesional, kolaborasi teknis, proyek cybersecurity, serta peluang karir."
+    ctaDownloadCv: "Unduh CV PDF",
+    metrics: {
+      gpa: "IPK / 4.00 (Cum Laude)",
+      research: "Publikasi Jurnal SINTA 3",
+    },
+    aboutTitle: "Pengalaman Praktis IT dengan Kedalaman Analisis Keamanan.",
+    aboutDesc1:
+      "Saya menggabungkan keahlian arsitektur jaringan, analisis keamanan siber, dan pengembangan sistem terintegrasi. Berfokus pada perancangan infrastruktur LAN/Wi-Fi yang andal, administrasi sistem Linux, analisis protokol TCP/IP, serta pengujian celah keamanan secara terkontrol.",
+    aboutDesc2:
+      "Telah sukses merancang dan mengimplementasikan aplikasi manajemen internal berbasis RBAC, mendukung operasional IT enterprise, mengonfigurasi perangkat keras jaringan MikroTik & Huawei, serta mempublikasikan hasil riset ilmiah di bidang keamanan sistem informasi.",
+    expTitle: "Pengalaman Profesional, Rekayasa Teknis, & Kepemimpinan",
+    projTitle: "Sistem Manajemen Informasi Pegawai (SIMPEG) Berbasis Peran",
+    projDesc:
+      "Arsitektur sistem web internal berbasis PHP & MySQL dengan enkapsulasi kontrol akses bertingkat (RBAC), alur persetujuan berkas dinamis, dan keamanan autentikasi ketat.",
+    pubTitle: "Karya Akademik & Riset Keamanan Sistem Autentikasi",
+    pubDetails:
+      "Riset mandiri komparatif menganalisis kinerja dan ketahanan algoritma hashing Bcrypt, Argon2, dan PBKDF2 terhadap potensi serangan keamanan pada sistem informasi kepegawaian.",
+    techProjTitle: "Implementasi Keamanan & Jaringan Terkontrol",
+    skillsTitle: "Kumpulan Keahlian & Spesialisasi Teknis",
+    credTitle: "Sertifikasi Profesional & Kredensial Resmi",
+    contactTitle: "Mari Membangun Sinergi & Koneksi Profesional",
+    contactDesc:
+      "Terbuka untuk diskusi teknis, kolaborasi proyek cybersecurity, manajemen infrastruktur jaringan, serta peluang karir tingkat profesional.",
   },
   en: {
-    nav: { about: "About", experience: "Experience", projects: "Projects", publication: "Publication", skills: "Skills", credentials: "Credentials", contact: "Contact" },
+    nav: {
+      about: "About",
+      experience: "Experience",
+      projects: "Core Projects",
+      publication: "Research",
+      skills: "Technical Skills",
+      credentials: "Credentials",
+      contact: "Contact",
+    },
     badge: "OPEN FOR PROFESSIONAL OPPORTUNITIES",
-    heroSubtitle: "PROFESSIONAL PORTFOLIO · 2026",
+    heroSubtitle: "TECHNICAL PORTFOLIO REVIEW · 2026",
     ctaConnect: "Let's Connect",
-    ctaExplore: "Explore Experience ↗",
+    ctaExplore: "Explore Experience",
     ctaGithub: "View GitHub",
-    metrics: { gpa: "GPA / 4.00", apps: "Integrated Web Apps", research: "SINTA 3 Research Journal" },
-    aboutTitle: "Practical IT experience supported by technical depth.",
-    aboutDesc1: "I focus on network infrastructure, network security, cybersecurity, and practical information systems. My work combines hands-on troubleshooting, web development, role-based access control (RBAC), Linux, Python, and controlled security testing.",
-    aboutDesc2: "I have developed internal web applications, supported operational IT environments, worked with LAN/Wi-Fi infrastructure, MikroTik and Huawei devices, and completed technical security projects.",
-    expTitle: "Professional, Technical, & Leadership Experience",
-    projTitle: "Role-Based Employee Management System (SIMPEG)",
-    projDesc: "An integrated internal web system built with PHP & MySQL, designed around role-based access control (RBAC), approval workflows, and connected data management.",
-    pubTitle: "Academic Work & Application Security Research",
-    pubDetails: "Single-author research comparing Bcrypt, Argon2, and PBKDF2 password hashing algorithms in the context of authentication security for web-based employee systems.",
-    techProjTitle: "Security & Networking Practice in Controlled Environments",
-    skillsTitle: "A Focused Technical Toolkit",
-    credTitle: "Certifications & Organizational Documentation",
-    contactTitle: "Let's Build a Professional Connection",
-    contactDesc: "Open for professional networking, technical collaboration, cybersecurity projects, and career opportunities."
-  }
+    ctaDownloadCv: "Download CV PDF",
+    metrics: {
+      gpa: "GPA / 4.00 (Cum Laude)",
+      apps: "Integrated Systems",
+      research: "SINTA 3 Journal",
+    },
+    aboutTitle: "Practical IT Experience Grounded in Security Engineering.",
+    aboutDesc1:
+      "I bridge the gap between network architecture, cybersecurity analysis, and secure system engineering. Concentrated on designing resilient LAN/Wi-Fi infrastructures, Linux system administration, TCP/IP protocol analysis, and controlled penetration testing.",
+    aboutDesc2:
+      "Successfully built enterprise RBAC internal web applications, supported operational IT environments, configured MikroTik & Huawei network appliances, and published peer-reviewed cybersecurity research.",
+    expTitle: "Professional, Engineering, & Leadership Experience",
+    projTitle: "Role-Based Employee Information System (SIMPEG)",
+    projDesc:
+      "Enterprise internal web system leveraging PHP & MySQL, architected with strict multi-tiered Role-Based Access Control (RBAC), approval workflows, and hardened data management.",
+    pubTitle: "Academic Research & Authentication Security Analysis",
+    pubDetails:
+      "Single-authored comparative research evaluating performance and resilience of Bcrypt, Argon2, and PBKDF2 hashing algorithms under web authentication threat models.",
+    techProjTitle: "Controlled Security & Networking Practice",
+    skillsTitle: "Core Technical Competencies",
+    credTitle: "Professional Certifications & Credentials",
+    contactTitle: "Let's Establish a Professional Connection",
+    contactDesc:
+      "Available for technical collaboration, cybersecurity infrastructure projects, network engineering, and career opportunities.",
+  },
 };
 
 export const EXPERIENCES = [
   {
     id: "internship-kbs",
-    period: "21 JULY 2025 — 21 AUGUST 2025",
+    period: "21 JULI 2025 — 21 AGUSTUS 2025",
     role: "IT Support, Network & Web Development Intern",
-    company: "PD Taman Satwa Kebun Binatang Surabaya · IT Team",
+    company: "PD Taman Satwa Kebun Binatang Surabaya · Divisi IT",
     description: {
-      id: "Mendukung kegiatan operasional IT serta berkontribusi dalam pemecahan masalah jaringan, dukungan teknis pengguna, manajemen perangkat, dan pengembangan aplikasi web internal terintegrasi.",
-      en: "Supported operational IT activities while contributing to network troubleshooting, end-user technical support, device management, and development of integrated internal web applications."
+      id: "Bertanggung jawab atas keberlangsungan operasional infrastruktur IT enterprise, pemecahan masalah jaringan skala luas, pemeliharaan perangkat keras, dan pengembangan ekosistem aplikasi web internal.",
+      en: "Responsible for enterprise IT operational continuity, large-scale network troubleshooting, hardware maintenance, and internal web ecosystem engineering.",
     },
     contributions: {
       id: [
-        "Memantau dan menangani kendala konektivitas LAN/Wi-Fi internal.",
-        "Membantu pemecahan masalah pada perangkat jaringan MikroTik dan Huawei.",
-        "Memberikan dukungan teknis komputer dan pemecahan masalah untuk pengguna.",
-        "Mengembangkan 3 aplikasi terintegrasi berbasis PHP & MySQL untuk karyawan, HRD, dan direktur.",
-        "Menerapkan autentikasi, manajemen sesi, RBAC, validasi input, dan alur persetujuan.",
-        "Mempresentasikan hasil pengembangan sistem kepada tim IT, HRD, dan manajemen."
+        "Memantau, menganalisis, dan menangani gangguan konektivitas LAN/Wi-Fi operasional harian.",
+        "Melakukan pemeliharaan dan konfigurasi teknis pada perangkat jaringan MikroTik dan Huawei.",
+        "Memberikan dukungan teknis tingkat lanjut (Helpdesk Tier 1 & 2) untuk pengguna internal perusahaan.",
+        "Merancang dan memproduksi 3 modul aplikasi web terintegrasi (PHP & MySQL) untuk Karyawan, HRD, dan Direksi.",
+        "Mengimplementasikan skema autentikasi aman, enkapsulasi RBAC, validasi input, dan manajemen sesi.",
+        "Mempresentasikan hasil evaluasi teknis dan arsitektur sistem di hadapan Tim IT dan Manajemen Senior.",
       ],
       en: [
-        "Monitored and troubleshot internal LAN/Wi-Fi connectivity issues.",
-        "Assisted troubleshooting of MikroTik and Huawei network devices.",
-        "Provided computer troubleshooting and technical support for users.",
-        "Developed 3 integrated PHP & MySQL applications for employees, HRD, and directors.",
-        "Implemented authentication, session management, RBAC, input validation, and approval workflows.",
-        "Presented system development results to the IT team, HRD, and management."
-      ]
+        "Monitored, analyzed, and remediated daily operational LAN/Wi-Fi connectivity anomalies.",
+        "Executed maintenance and technical configuration on MikroTik and Huawei network appliances.",
+        "Provided advanced technical support (Helpdesk Tier 1 & 2) for corporate internal users.",
+        "Architected and deployed 3 integrated web application modules (PHP & MySQL) for Staff, HR, and Executives.",
+        "Implemented secure authentication schemes, RBAC encapsulation, input validation, and session management.",
+        "Presented technical evaluation and system architecture directly to the IT Team and Executive Leadership.",
+      ],
     },
     images: [
-      { src: "/assets/magang.jpg", alt: "Diskusi Tim IT Magang" },
-      { src: "/assets/internship-discussion.jpg", alt: "Kegiatan IT Support Magang" },
-      { src: "/assets/internship-coding.jpg", alt: "Pengembangan Sistem SIMPEG" }
-    ]
+      { src: "/assets/foto/magang.jpg", alt: "Kolaborasi Tim IT Magang" },
+      {
+        src: "/assets/foto/internship-discussion.jpg",
+        alt: "Inspeksi & Support Infrastruktur IT",
+      },
+      {
+        src: "/assets/foto/internship-coding.jpg",
+        alt: "Pengembangan Kode Sistem SIMPEG",
+      },
+      { src: "/assets/foto/magang 2.jpg", alt: "Dokumentasi Operasional IT" },
+    ],
   },
   {
     id: "workshop-kaliber",
-    period: "31 MAY 2025 · LSO KALIBER",
-    role: "Workshop Event Chairman",
-    company: "Ngoding Cerdas Bareng Python dengan Clean Code, Secure Code dan AI untuk Produktivitas",
+    period: "31 MEI 2025 · LSO KALIBER UMM",
+    role: "Chairman of Event Committee",
+    company:
+      "Workshop: Ngoding Cerdas Bareng Python (Clean Code, Secure Code & AI Integration)",
     description: {
-      id: "Memimpin koordinasi panitia dan eksekusi acara dari awal hingga akhir, mencakup alur kerja tim, pemateri, manajemen peserta, publikasi, dan komunikasi eksternal.",
-      en: "Led committee coordination and end-to-end event execution, covering team workflow, speaker coordination, participant management, publication, and external communication."
+      id: "Memimpin perencanaan strategis, alokasi sumber daya, dan eksekusi teknis acara workshop pemrograman berskala fakultas.",
+      en: "Led strategic planning, resource allocation, and technical execution for a faculty-wide programming workshop.",
     },
     contributions: {
       id: [
-        "Mengkoordinasikan kepanitiaan dan 1 pemateri.",
-        "Mengelola jalannya acara workshop yang dihadiri 50 peserta.",
-        "Memastikan persiapan, pelaksanaan, dan penutupan acara berjalan sesuai rencana."
+        "Mengordinasikan alur kerja seluruh divisi panitia pelaksana dan pembicara utama.",
+        "Mengelola kelancaran teknis workshop interaktif yang dihadiri 50+ peserta.",
+        "Memastikan implementasi standar acara teknis berjalan sesuai linimasa dan target sasaran.",
       ],
       en: [
-        "Coordinated the committee and 1 speaker.",
-        "Managed a workshop attended by 50 participants.",
-        "Ensured preparation, execution, and closing activities ran according to plan."
-      ]
+        "Coordinated structural workflows across committee divisions and the keynote speaker.",
+        "Managed operational execution of an interactive workshop attended by 50+ engineers.",
+        "Ensured strict adherence to event timelines, technical standards, and delivery goals.",
+      ],
     },
-    tags: ["Leadership", "Project Coordination", "Workshop Management"],
+    tags: ["Leadership", "Project Management", "Event Execution"],
     images: [
-      { src: "/assets/workshop-leader.jpg", alt: "Dokumentasi Ketua Pelaksana Workshop" }
-    ]
-  }
+      {
+        src: "/assets/foto/workshop-leader.jpg",
+        alt: "Dokumentasi Ketua Pelaksana Workshop",
+      },
+    ],
+  },
 ];
 
 export const PROJECTS: Project[] = [
   {
     id: "simpeg-karyawan",
-    title: "SIMPEG - Karyawan Role",
+    title: "SIMPEG — Employee Portal",
     category: "Web Development",
-    role: "ROLE 01",
+    role: "MODULE 01",
     description: {
-      id: "Antarmuka sisi karyawan untuk pengajuan dan akses layanan berdasarkan peran pengguna dan alur kerja.",
-      en: "Employee-side interface for submitting and accessing services based on the assigned user role and workflow."
+      id: "Portal mandiri karyawan untuk pengajuan izin, pemantauan riwayat kerja, dan akses enkapsulasi data sesuai otorisasi akun.",
+      en: "Self-service employee portal for leave submission, attendance tracking, and access-controlled data retrieval.",
     },
-    coverImage: "/assets/project-1.jpg",
-    techStack: ["PHP", "MySQL", "User Access", "RBAC"],
-    date: "2025"
+    coverImage: "/assets/projects/project-1.jpg",
+    techStack: ["PHP", "MySQL", "RBAC", "Form Validation"],
+    date: "2025",
   },
   {
     id: "simpeg-hrd",
-    title: "SIMPEG - HRD Management",
+    title: "SIMPEG — Administrative Console",
     category: "Web Development",
-    role: "ROLE 02",
+    role: "MODULE 02",
     description: {
-      id: "Antarmuka administratif untuk mengelola data karyawan, riwayat izin, dan alur kerja persetujuan.",
-      en: "Administrative interface for managing employee information, leave records, and approval-related workflows."
+      id: "Konsol manajemen HRD untuk verifikasi berkas, pemrosesan persetujuan bertingkat, dan pengolahan data kepegawaian.",
+      en: "Administrative HR console designed for document verification, multi-stage approval processing, and workforce analytics.",
     },
-    coverImage: "/assets/project-2.jpg",
-    techStack: ["PHP", "MySQL", "HR Management", "Workflows"],
-    date: "2025"
+    coverImage: "/assets/projects/project-2.jpg",
+    techStack: ["PHP", "MySQL", "Workflow Automation", "Data Filters"],
+    date: "2025",
   },
   {
     id: "simpeg-direktur",
-    title: "SIMPEG - Direktur Dashboard",
+    title: "SIMPEG — Executive Dashboard",
     category: "Web Development",
-    role: "ROLE 03",
+    role: "MODULE 03",
     description: {
-      id: "Dashboard tingkat manajemen untuk pemantauan informasi yang lebih luas dan pengawasan data sistem.",
-      en: "Management-level dashboard for broader information monitoring and oversight of organizational system data."
+      id: "Dashboard eksekutif untuk pengawasan tingkat tinggi, ringkasan indikator kinerja, dan pengambilan keputusan berbasis data.",
+      en: "High-level executive dashboard offering real-time metric summaries, organizational oversight, and decision-support views.",
     },
-    coverImage: "/assets/project-3.jpg",
-    techStack: ["PHP", "MySQL", "Oversight", "Dashboard"],
-    date: "2025"
-  }
+    coverImage: "/assets/projects/project-3.jpg",
+    techStack: ["PHP", "MySQL", "Executive Reporting", "UI/UX"],
+    date: "2025",
+  },
 ];
 
 export const TECHNICAL_PROJECTS = [
   {
     id: "01",
-    title: "Network Simulation & Security",
+    title: "Enterprise Network Topology Simulation",
     description: {
-      id: "Merancang simulasi jaringan dengan VLAN, routing, kontrol akses, segmentasi jaringan, dan pengujian konektivitas.",
-      en: "Designed network simulations with VLAN, routing, access control, network segmentation, and connectivity testing."
+      id: "Merancang simulasi arsitektur jaringan terfragmentasi dengan VLAN, inter-VLAN routing, Access Control List (ACL), dan analisis redundancy.",
+      en: "Designed segmented enterprise network topology using VLANs, inter-VLAN routing, ACLs, and redundancy failover testing.",
     },
-    tags: ["Cisco Packet Tracer", "VLAN", "Routing"]
+    tags: ["Cisco Packet Tracer", "VLAN", "ACL", "Subnetting"],
   },
   {
     id: "02",
-    title: "Honeypot & Network Monitoring",
+    title: "Honeypot Deployment & Traffic Analysis",
     description: {
-      id: "Membangun simulasi lokal honeypot dan aktivitas port scanning serta menganalisis lalu lintas jaringan.",
-      en: "Built local simulations involving honeypot and port scanning activities and analyzed network traffic and activity."
+      id: "Membangun lingkungan honeypot lokal untuk merekam aktivitas port scanning, ekstraksi log serangan, dan analisis paket data.",
+      en: "Deployed local honeypot environments to capture port scanning vectors, extract attack logs, and analyze packet payloads.",
     },
-    tags: ["Python", "Nmap", "Wireshark"]
+    tags: ["Python", "Wireshark", "Nmap", "Log Analysis"],
   },
   {
     id: "03",
-    title: "Web Application Security Testing",
+    title: "Controlled Web Vulnerability Assessment",
     description: {
-      id: "Melakukan pengujian keamanan terkontrol meliputi SQL Injection, brute-force, simulasi XSS, dan analisis mitigasi.",
-      en: "Performed controlled security testing involving SQL Injection, brute-force, XSS simulation, and mitigation analysis."
+      id: "Melakukan audit keamanan aplikasi web terisolasi meliputi pengujian SQL Injection, simulasi XSS, dan rekomendasi mitigasi.",
+      en: "Executed vulnerability assessment on isolated web apps testing SQL Injection, XSS payloads, and remediation strategies.",
     },
-    tags: ["DVWA", "SQLMap", "Hydra"]
+    tags: ["DVWA", "SQLMap", "Hydra", "OWASP Top 10"],
   },
   {
     id: "04",
-    title: "WordPress Security & Red Teaming",
+    title: "Hardened WordPress & Red Team Auditing",
     description: {
-      id: "Berpraktik pengujian keamanan WordPress di lingkungan terkontrol, analisis konfigurasi, dan konsep pasca-eksploitasi.",
-      en: "Practiced WordPress security testing in a controlled environment, including configuration analysis and post-exploitation concepts."
+      id: "Pengujian keamanan CMS terkontrol, audit kredensial, hardening berkas konfigurasi server, dan analisis pasca-eksploitasi.",
+      en: "Controlled CMS penetration audit, credential testing, server configuration hardening, and post-exploitation analysis.",
     },
-    tags: ["WordPress", "Linux", "Red Team"]
-  }
+    tags: ["WordPress Security", "Linux Hardening", "Red Team"],
+  },
 ];
 
 export const CERTIFICATES: Certificate[] = [
-  // --- CISCO NETWORKING ACADEMY ---
   {
     id: "cert-cisco-threat-mgmt",
     name: "Cyber Threat Management",
@@ -236,9 +287,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "Cybersecurity",
     image: "/assets/certificates/Cyber_Threat_Management.jpg",
     description: {
-      id: "Sertifikasi resmi Cisco dalam pengelolaan ancaman siber, analisis vektor serangan, dan strategi mitigasi risiko keamanan digital.",
-      en: "Official Cisco certificate in cyber threat management, attack vector analysis, and digital security risk mitigation strategies."
-    }
+      id: "Sertifikasi resmi Cisco dalam identifikasi lanskap ancaman, analisis taktik serangan siber, dan perancangan strategi respons insiden.",
+      en: "Official Cisco credential in threat landscape mapping, attack vector analysis, and incident response strategy formulation.",
+    },
   },
   {
     id: "cert-cisco-net-defense",
@@ -247,9 +298,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "Cybersecurity",
     image: "/assets/certificates/Network_Defense.jpg",
     description: {
-      id: "Sertifikasi pertahanan jaringan yang mencakup kontrol akses, teknologi firewall, IDS/IPS, dan pengamanan infrastruktur IT.",
-      en: "Network defense certificate covering access control, firewall technologies, IDS/IPS, and IT infrastructure security."
-    }
+      id: "Spesialisasi pertahanan arsitektur jaringan, pengawasan lalu lintas data, konfigurasi Firewall, dan penanganan IDS/IPS.",
+      en: "Specialized in network architecture defense, traffic monitoring, Firewall configurations, and IDS/IPS operations.",
+    },
   },
   {
     id: "cert-cisco-endpoint-sec",
@@ -258,9 +309,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "Cybersecurity",
     image: "/assets/certificates/Endpoint_Security.jpg",
     description: {
-      id: "Sertifikasi perlindungan endpoint yang berfokus pada pengamanan perangkat klien, pemantauan sistem, dan mitigasi malware.",
-      en: "Endpoint protection certificate focusing on securing client devices, system monitoring, and malware mitigation."
-    }
+      id: "Sertifikasi pengamanan node/endpoint, pemantauan integritas sistem operasi, analisis malware, dan enkripsi data.",
+      en: "Credential focused on securing client nodes, OS integrity monitoring, malware mitigation, and data encryption principles.",
+    },
   },
   {
     id: "cert-cisco-net-support-sec",
@@ -269,20 +320,21 @@ export const CERTIFICATES: Certificate[] = [
     category: "Network Engineering",
     image: "/assets/certificates/Network_Support_and_Security.jpg",
     description: {
-      id: "Sertifikasi kombinasi dukungan operasional jaringan dan penerapan protokol keamanan dasar pada infrastruktur LAN/Wi-Fi.",
-      en: "Combined certificate in operational network support and basic security protocol implementation for LAN/Wi-Fi infrastructure."
-    }
+      id: "Kompetensi terpadu pemeliharaan operasional jaringan dan penerapan protokol keamanan infrastruktur LAN/Wi-Fi.",
+      en: "Combined competency in operational network maintenance and security protocol deployment across LAN/Wi-Fi infrastructures.",
+    },
   },
   {
     id: "cert-cisco-net-addressing",
-    name: "Network Addressing and Basic Troubleshooting",
+    name: "Network Addressing & Troubleshooting",
     issuer: "Cisco Networking Academy",
     category: "Network Engineering",
-    image: "/assets/certificates/Network_Addressing_and_Basic_Troubleshooting.jpg",
+    image:
+      "/assets/certificates/Network_Addressing_and_Basic_Troubleshooting.jpg",
     description: {
-      id: "Sertifikasi pengalamatan IPv4/IPv6, subnetting, serta teknik pemecahan masalah konektivitas jaringan dasar.",
-      en: "Certificate in IPv4/IPv6 addressing, subnetting, and foundational network connectivity troubleshooting techniques."
-    }
+      id: "Penguasaan skema pengalamatan IPv4/IPv6, kalkulasi subnetting presisi, dan analisis diagnostik kendala konektivitas.",
+      en: "Mastery of IPv4/IPv6 addressing schemes, precise subnet calculation, and diagnostic network connectivity troubleshooting.",
+    },
   },
   {
     id: "cert-cisco-net-basics",
@@ -291,9 +343,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "Network Engineering",
     image: "/assets/certificates/Networking_Basics.jpg",
     description: {
-      id: "Sertifikasi pemahaman dasar arsitektur jaringan, topologi, model OSI & TCP/IP, serta konsep komunikasi data.",
-      en: "Foundational certificate in network architecture, topologies, OSI & TCP/IP models, and data communication concepts."
-    }
+      id: "Pemahaman mendalam fondasi arsitektur jaringan, topologi fisik/logis, serta spesifikasi model OSI & TCP/IP.",
+      en: "Foundational mastery of network topology, physical/logical architectures, and OSI & TCP/IP reference stacks.",
+    },
   },
   {
     id: "cert-cisco-hardware-upgrade",
@@ -302,9 +354,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "IT Support",
     image: "/assets/certificates/Hardware_and_Upgrade_Support.jpg",
     description: {
-      id: "Sertifikasi teknis dalam perawatan hardware komputer, upgrade komponen, pemeliharaan sistem, dan trouble-shooting fisik.",
-      en: "Technical certificate in computer hardware maintenance, component upgrades, system servicing, and physical troubleshooting."
-    }
+      id: "Keahlian pemeliharaan fisik perangkat IT, analisis spesifikasi komponen, perbaikan hardware, dan peningkatan performa sistem.",
+      en: "Expertise in physical IT hardware servicing, component specification auditing, hardware repairs, and system optimization.",
+    },
   },
   {
     id: "cert-cisco-hardware-basics",
@@ -313,9 +365,9 @@ export const CERTIFICATES: Certificate[] = [
     category: "IT Support",
     image: "/assets/certificates/Computer_Hardware_Basics.jpg",
     description: {
-      id: "Sertifikasi dasar-dasar arsitektur perangkat keras komputer, perakitan, dan fungsi komponen utama sistem.",
-      en: "Certificate in computer hardware architecture fundamentals, assembly, and core system component functions."
-    }
+      id: "Prinsip dasar arsitektur perangkat keras, bus antarmuka, perakitan komputer, dan pengujian keandalan komponen.",
+      en: "Core principles of hardware architecture, system buses, computer assembly, and component reliability testing.",
+    },
   },
   {
     id: "cert-cisco-customer-support",
@@ -324,48 +376,97 @@ export const CERTIFICATES: Certificate[] = [
     category: "IT Support",
     image: "/assets/certificates/IT_Customer_Support_Basics.jpg",
     description: {
-      id: "Sertifikasi layanan bantuan teknis (helpdesk/support), komunikasi profesional, dan penanganan keluhan pengguna IT.",
-      en: "Certificate in technical helpdesk support, professional communication, and IT user issue resolution."
-    }
+      id: "Standar komunikasi teknis profesional, manajemen tiket bantuan IT, dan penyelesaian masalah pengguna sistem.",
+      en: "Professional technical communication standards, IT ticketing management, and systematic end-user problem resolution.",
+    },
   },
-
-  // --- ORGANISASI & KEPEMIMPINAN ---
+  {
+    id: "cert-cisco-networking-devices",
+    name: "Networking Devices & Initial Config",
+    issuer: "Cisco Networking Academy",
+    category: "Network Engineering",
+    image:
+      "/assets/certificates/Networking_Devices_and_Initial_Configuration.jpg",
+    description: {
+      id: "Konfigurasi tingkat dasar hingga menengah untuk peranti Switch dan Router Cisco via Command Line Interface (CLI).",
+      en: "Foundational to intermediate CLI configuration for Cisco Switches and Routers operational management.",
+    },
+  },
+  {
+    id: "cert-cisco-os-basics",
+    name: "Operating Systems Basics",
+    issuer: "Cisco Networking Academy",
+    category: "IT Support",
+    image: "/assets/certificates/Operating_Systems_Basics.jpg",
+    description: {
+      id: "Fondasi struktural sistem operasi enterprise (Linux & Windows), manajemen memori, dan kontrol eksekusi proses.",
+      en: "Structural foundations of enterprise OS platforms (Linux & Windows), memory management, and process control.",
+    },
+  },
+  {
+    id: "cert-cisco-os-support",
+    name: "Operating Systems Support",
+    issuer: "Cisco Networking Academy",
+    category: "IT Support",
+    image: "/assets/certificates/Operating_Systems_Support.jpg",
+    description: {
+      id: "Dukungan teknis mendalam untuk isolasi kesalahan perangkat lunak, konfigurasi sistem, dan penanganan gangguan registri/kernel.",
+      en: "Advanced technical support for software fault isolation, system provisioning, and registry/kernel troubleshooting.",
+    },
+  },
+  {
+    id: "cert-cisco-security-connectivity-support",
+    name: "Security and Connectivity Support",
+    issuer: "Cisco Networking Academy",
+    category: "Cybersecurity",
+    image:
+      "/assets/certificates/Security_and_Connectivity_Support.jpg",
+    description: {
+      id: "Penanganan dukungan konektivitas aman, analisis enkripsi saluran komunikasi, dan verifikasi sertifikat digital.",
+      en: "Technical execution of secure link support, communication encryption validation, and digital certificate verification.",
+    },
+  },
   {
     id: "cert-kaliber-infoker",
-    name: "Ketua Bidang Informasi dan Kerjasama (INFOKER)",
+    name: "Ketua Bidang Informasi & Kerjasama (INFOKER)",
     issuer: "LSO KALIBER — Universitas Muhammadiyah Malang",
-    category: "Leadership & Organization",
+    category: "Leadership",
     image: "/assets/certificates/Muchamad_Gilang_Dwi_Saputra_LSO_KALIBER.jpg",
     description: {
-      id: "Sertifikat penghargaan atas kontribusi sebagai Ketua Bidang INFOKER LSO KALIBER Fakultas Teknik UMM Periode 2024–2025.",
-      en: "Certificate of appreciation as Head of Information & Cooperation Dept. (INFOKER) LSO KALIBER Faculty of Engineering UMM (2024–2025)."
-    }
-  }
+      id: "Penghargaan kepemimpinan atas pencapaian mengarahkan strategi publikasi teknis dan kemitraan organisasi periode 2024–2025.",
+      en: "Leadership award for directing technical publication strategy and organizational partnership initiatives (2024–2025).",
+    },
+  },
 ];
 
 export const SKILLS_CATEGORIES = [
   {
     title: "Network Engineering",
-    skills: "Computer Networking · TCP/IP · LAN · Wi-Fi · VLAN · Routing · MikroTik · Cisco Packet Tracer · Network Troubleshooting"
+    skills:
+      "Computer Networking · TCP/IP Stack · LAN/Wi-Fi Architecture · VLAN Segmentation · Inter-VLAN Routing · MikroTik RouterOS · Cisco Packet Tracer · Network Diagnostics & Troubleshooting",
   },
   {
-    title: "Cybersecurity",
-    skills: "Network Security · Web Application Security · Penetration Testing · Nmap · Wireshark · Password Hashing"
+    title: "Cybersecurity & Defense",
+    skills:
+      "Network Security · Web Application Vulnerability Assessment · Penetration Testing Fundamentals · Nmap Scanning · Wireshark Packet Analysis · Cryptographic Password Hashing (Bcrypt, Argon2, PBKDF2)",
   },
   {
-    title: "Programming & Database",
-    skills: "Python · PHP · MySQL · Authentication · Session Management · Input Validation"
+    title: "Development & Databases",
+    skills:
+      "Python · PHP · MySQL · Role-Based Access Control (RBAC) · Secure Authentication · Session Security · Input Sanitization & Validation",
   },
   {
-    title: "Operating Systems",
-    skills: "Linux · Windows · Basic system administration and technical troubleshooting"
+    title: "Operating Systems & Admin",
+    skills:
+      "Linux Systems (Ubuntu/Debian) · Windows Server/Desktop · CLI Administration · Environment Troubleshooting",
   },
   {
     title: "Leadership & Management",
-    skills: "Leadership · Communication · Teamwork · Project Coordination · Problem Solving · Analytical Thinking"
+    skills:
+      "Technical Leadership · Strategic Event Management · Team Coordination · Analytical Problem Solving · Communication",
   },
   {
     title: "Languages",
-    skills: "Bahasa Indonesia (Native) · English (Basic Professional)"
-  }
+    skills: "Bahasa Indonesia (Native) · English (Professional Technical Working Proficiency)",
+  },
 ];
