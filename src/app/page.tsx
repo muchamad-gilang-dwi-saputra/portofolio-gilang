@@ -15,9 +15,15 @@ import ContactSection from "@/components/sections/ContactSection";
 export default function Home() {
   const [previewImage, setPreviewImage] = useState<{ src: string; alt: string } | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  
+  // State untuk menandai apakah komponen sudah dimuat di browser (client-side)
+  const [isMounted, setIsMounted] = useState(false);
 
   // Efek pantulan cahaya mouse (Mouse Spotlight Glow)
   useEffect(() => {
+    // Menandai bahwa komponen sudah berhasil di-render di browser
+    setIsMounted(true);
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
@@ -29,11 +35,13 @@ export default function Home() {
     <div className="min-h-screen bg-[#050505] text-slate-100 font-sans selection:bg-[#8b1c1c] selection:text-[#ffffff] relative overflow-x-hidden">
       <LoadingScreen />
 
-      {/* MOUSE SPOTLIGHT GLOW */}
-      <div
-        className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
-        style={{ background: `radial-gradient(650px circle at ${mousePos.x}px ${mousePos.y}px, rgba(139, 28, 28, 0.05), transparent 80%)` }}
-      />
+      {/* MOUSE SPOTLIGHT GLOW - Hanya dirender setelah komponen mounted di client */}
+      {isMounted && (
+        <div
+          className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
+          style={{ background: `radial-gradient(650px circle at ${mousePos.x}px ${mousePos.y}px, rgba(139, 28, 28, 0.05), transparent 80%)` }}
+        />
+      )}
 
       {/* BACKGROUND NEON ORBS & GRID */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-[#020202]">

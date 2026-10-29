@@ -29,8 +29,8 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
   github: "https://github.com/muchamad-gilang-dwi-saputra",
   instagram: "https://www.instagram.com/muchamad_gilang_dwi_saputra",
-  role: "Spesialis Keamanan Jaringan & Infrastruktur IT",
-  bio: "Lulusan Teknik Informatika UMM (IPK 3.83 / Predikat Cum Laude). Berfokus pada Keamanan Jaringan, Infrastruktur Sistem, dan Pengujian Keamanan Aplikasi. Memiliki rekam jejak praktis dalam menangani jaringan operasional skala besar, penguatan autentikasi web berbasis peran (RBAC), analisis trafik data, serta riset kriptografi password.",
+  role: "Cyber Security & Network Engineer | S1 Informatika (Cum Laude) | Qualys & Fortinet Certified",
+  bio: "Lulusan S1 Informatika (Cum Laude) dengan spesialisasi di bidang Keamanan Siber dan Infrastruktur Jaringan. Memegang lisensi sertifikasi global dari Qualys, Fortinet, dan OPSWAT.",
 };
 
 export const CONTENT = {
@@ -53,18 +53,20 @@ export const CONTENT = {
     gpa: "IPK / 4.00 (Cum Laude)",
     research: "Publikasi Jurnal SINTA 3",
   },
-  aboutTitle: "Pengalaman Praktis IT dengan Kedalaman Analisis Keamanan.",
-  aboutDesc1:
-    "Saya menggabungkan keahlian arsitektur jaringan, analisis keamanan siber, dan pengembangan sistem terintegrasi. Berfokus pada perancangan infrastruktur LAN/Wi-Fi yang andal, administrasi sistem Linux, analisis protokol TCP/IP, serta pengujian celah keamanan secara terkontrol.",
-  aboutDesc2:
-    "Telah sukses merancang dan mengimplementasikan aplikasi manajemen internal berbasis RBAC, mendukung operasional IT enterprise, mengonfigurasi perangkat keras jaringan MikroTik & Huawei, serta mempublikasikan hasil riset ilmiah di bidang keamanan sistem informasi.",
+  aboutTitle: "Membangun & Mengamankan Infrastruktur Digital.",
+  aboutDescriptions: [
+    "Halo, perkenalkan saya Gilang. Sebagai lulusan S1 Informatika, ketertarikan utama saya ada di dunia infrastruktur jaringan dan keamanan siber. Buat saya, mengamankan sistem itu bukan sekadar menjalankan program otomatis, tapi lebih kepada memahami cara kerja jaringan tersebut dari dasar, lalu mengunci celahnya sebelum pihak lain menemukannya.",
+    "Semasa kuliah, saya banyak menghabiskan waktu untuk meriset keamanan data. Salah satu hasilnya adalah publikasi riset komparasi algoritma kriptografi password di Jurnal SINTA 3. Namun, karena sadar bahwa teori akademik harus selalu dibarengi praktik nyata, saya memutuskan untuk mengambil ujian lisensi global dari Qualys, Fortinet, dan OPSWAT, serta menyelesaikan berbagai modul operasional jaringan dari Cisco.",
+    "Bicara soal pengalaman lapangan, saya pernah terjun langsung membantu tim IT PDTS KBS saat program magang. Di sana, saya ikut menangani operasional jaringan harian perusahaan, mulai dari troubleshooting LAN/WLAN, menggunakan TP-Link untuk jaringan MikroTik, hingga mengonfigurasi modem keluaran Huawei dan ZTE.",
+    "Di luar urusan teknis, saya adalah orang yang senang berkolaborasi dan ngobrol dengan banyak orang. Pengalaman menjadi Ketua Pelaksana workshop IT kampus dan memimpin divisi organisasi melatih saya untuk bisa berkomunikasi dengan baik dan mengelola tim. Sekarang, saya sangat siap untuk membawa energi positif dan skill teknis ini ke lingkungan kerja profesional."
+  ],
   expTitle: "Pengalaman Profesional, Rekayasa Teknis, & Kepemimpinan",
   projTitle: "Sistem Manajemen Informasi Pegawai (SIMPEG) Berbasis Peran",
   projDesc:
     "Arsitektur sistem web internal berbasis PHP & MySQL dengan enkapsulasi kontrol akses bertingkat (RBAC), alur persetujuan berkas dinamis, dan keamanan autentikasi ketat.",
   pubTitle: "Karya Akademik & Riset Keamanan Sistem Autentikasi",
   pubDetails:
-    "Riset mandiri komparatif menganalisis kinerja dan ketahanan algoritma hashing Bcrypt, Argon2, dan PBKDF2 terhadap potensi serangan keamanan pada sistem informasi kepegawaian.",
+    "Penulis Utama (Jurnal SINTA 3). Menguji ketahanan algoritma Bcrypt, Argon2, dan PBKDF2 melalui simulasi peretasan (Dictionary Attack) menggunakan GPU NVIDIA & Hashcat. Merumuskan rekomendasi arsitektur penyimpanan kredensial yang optimal untuk mengamankan data sensitif pegawai (DOI: 10.30591/jpit.v11i2.10280).",
   techProjTitle: "Implementasi Keamanan & Jaringan Terkontrol",
   skillsTitle: "Kumpulan Keahlian & Spesialisasi Teknis",
   credTitle: "Sertifikasi Profesional & Kredensial Resmi",
