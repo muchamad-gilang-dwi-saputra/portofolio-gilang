@@ -15,15 +15,10 @@ import ContactSection from "@/components/sections/ContactSection";
 export default function Home() {
   const [previewImage, setPreviewImage] = useState<{ src: string; alt: string } | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  
-  // State untuk menandai apakah komponen sudah dimuat di browser (client-side)
   const [isMounted, setIsMounted] = useState(false);
 
-  // Efek pantulan cahaya mouse (Mouse Spotlight Glow)
   useEffect(() => {
-    // Menandai bahwa komponen sudah berhasil di-render di browser
     setIsMounted(true);
-
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
@@ -35,7 +30,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#050505] text-slate-100 font-sans selection:bg-[#8b1c1c] selection:text-[#ffffff] relative overflow-x-hidden">
       <LoadingScreen />
 
-      {/* MOUSE SPOTLIGHT GLOW - Hanya dirender setelah komponen mounted di client */}
+      {/* MOUSE SPOTLIGHT GLOW */}
       {isMounted && (
         <div
           className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"

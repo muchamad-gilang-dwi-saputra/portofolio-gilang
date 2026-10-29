@@ -42,19 +42,19 @@ export default function HeroSection({ onImageClick }: { onImageClick: (img: { sr
           
           {/* INTEGRASI 4 PARAGRAF ABOUT ME KE HERO SECTION */}
           <div className="mt-8 flex flex-col gap-4 max-w-2xl">
-            {CONTENT.aboutDescriptions.map((desc, idx) => (
-              <p 
-                key={idx} 
-                className={`leading-relaxed text-white ${
-                  idx === 0 
-                    ? "text-base sm:text-lg font-semibold" 
-                    : "text-sm sm:text-base opacity-90"
-                }`}
-              >
-                {desc}
-              </p>
-            ))}
-          </div>
+  {CONTENT.aboutDescriptions.map((desc, idx) => (
+    <p 
+      key={idx} 
+      className={`leading-relaxed text-white ${
+        idx === 0 
+          ? "text-base sm:text-lg font-semibold" 
+          : "text-sm sm:text-base"
+      }`}
+    >
+      {desc}
+    </p>
+  ))}
+</div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <motion.a whileHover={{ scale: 1.05, boxShadow: "0px 0px 30px rgba(139, 28, 28, 0.5)" }} whileTap={{ scale: 0.95 }} href="#experience" className="inline-flex items-center gap-2 rounded-xl bg-[#8b1c1c] px-6 py-3.5 text-sm font-extrabold text-white transition hover:bg-[#a52a2a]">

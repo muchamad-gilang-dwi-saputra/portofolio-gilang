@@ -68,7 +68,7 @@ export const CONTENT = {
   pubDetails:
     "Penulis Utama (Jurnal SINTA 3). Menguji ketahanan algoritma Bcrypt, Argon2, dan PBKDF2 melalui simulasi peretasan (Dictionary Attack) menggunakan GPU NVIDIA & Hashcat. Merumuskan rekomendasi arsitektur penyimpanan kredensial yang optimal untuk mengamankan data sensitif pegawai (DOI: 10.30591/jpit.v11i2.10280).",
   techProjTitle: "Implementasi Keamanan & Jaringan Terkontrol",
-  skillsTitle: "Kumpulan Keahlian & Spesialisasi Teknis",
+  skillsTitle: "Skills",
   credTitle: "Sertifikasi Profesional & Kredensial Resmi",
   contactTitle: "Mari Membangun Sinergi & Koneksi Profesional",
   contactDesc:
@@ -79,40 +79,46 @@ export const EXPERIENCES = [
   {
     id: "internship-kbs",
     period: "21 JULI 2025 — 21 AGUSTUS 2025",
-    role: "IT Support, Network & Web Development Intern",
-    company: "PD Taman Satwa Kebun Binatang Surabaya · Divisi IT",
+    role: "Network Administrator & IT Developer Intern",
+    company: "PD Taman Satwa Kebun Binatang Surabaya (PDTS KBS) · Divisi IT",
     description:
-      "Bertanggung jawab atas keberlangsungan operasional infrastruktur IT enterprise, pemecahan masalah jaringan skala luas, pemeliharaan perangkat keras, dan pengembangan ekosistem aplikasi web internal.",
+      "Bertanggung jawab atas keberlangsungan operasional jaringan enterprise, pemecahan masalah konektivitas, serta merancang & mengembangkan Sistem Informasi Kepegawaian (SIMPEG / HRIS) berbasis peran (RBAC) untuk 24 departemen.",
     contributions: [
-      "Memantau, menganalisis, dan menangani gangguan konektivitas LAN/Wi-Fi operasional harian.",
-      "Melakukan pemeliharaan dan konfigurasi teknis pada perangkat jaringan MikroTik dan Huawei.",
-      "Memberikan dukungan teknis tingkat lanjut (Helpdesk Tier 1 & 2) untuk pengguna internal perusahaan.",
-      "Merancang dan memproduksi 3 modul aplikasi web terintegrasi (PHP & MySQL) untuk Karyawan, HRD, dan Direksi.",
-      "Mengimplementasikan skema autentikasi aman, enkapsulasi RBAC, validasi input, dan manajemen sesi.",
-      "Mempresentasikan hasil evaluasi teknis dan arsitektur sistem di hadapan Tim IT dan Manajemen Senior.",
+      "Optimasi Jaringan: Memonitoring & menganalisis trafik menggunakan Wireshark & inSSIDer, berhasil menekan packet loss dari 11,5% menjadi 0% serta menstabilkan latency/ping.",
+      "Manajemen Hardware: Mengelola & mengonfigurasi perangkat multi-vendor (MikroTik, TP-Link, Huawei, ZTE) serta merapikan frekuensi Wi-Fi (2.4GHz & 5GHz) untuk mencegah interferensi.",
+      "Hardening Keamanan: Mengaktifkan DoS Protection dan Firewall (Level High) pada router utama untuk mengamankan jaringan dari serangan brute-force.",
+      "SIMPEG Modul 01 (Portal Karyawan): Merancang fitur mandiri pengajuan izin, pemantauan riwayat kerja, dan enkapsulasi akses data sesuai otorisasi akun.",
+      "SIMPEG Modul 02 (Konsol Administrasi HRD): Membangun konsol verifikasi berkas, pemrosesan persetujuan bertingkat, dan pengolahan data kepegawaian.",
+      "SIMPEG Modul 03 (Dashboard Eksekutif Direksi): Membuat dashboard pengawasan tingkat tinggi, ringkasan indikator kinerja, dan pelaporan keputusan berbasis data.",
+      "Presentasi Eksekutif: Mempresentasikan hasil evaluasi infrastruktur dan arsitektur web SIMPEG di hadapan Tim IT, HRD, dan Direktur Utama."
     ],
+    tags: ["MikroTik", "Huawei", "ZTE", "Wireshark", "PHP & MySQL", "RBAC", "SIMPEG / HRIS"],
     images: [
       { src: "/assets/foto/magang.jpg", alt: "Kolaborasi Tim IT Magang" },
       { src: "/assets/foto/internship-discussion.jpg", alt: "Inspeksi & Support Infrastruktur IT" },
       { src: "/assets/foto/internship-coding.jpg", alt: "Pengembangan Kode Sistem SIMPEG" },
       { src: "/assets/foto/magang 2.jpg", alt: "Dokumentasi Operasional IT" },
+      { src: "/assets/projects/project-1.jpg", alt: "SIMPEG — Portal Karyawan" },
+      { src: "/assets/projects/project-2.jpg", alt: "SIMPEG — Konsol Administrasi HRD" },
+      { src: "/assets/projects/project-3.jpg", alt: "SIMPEG — Dashboard Eksekutif" },
     ],
   },
   {
     id: "workshop-kaliber",
-    period: "31 MEI 2025 · LSO KALIBER UMM",
-    role: "Ketua Pelaksana Acara (Ketupel)",
-    company: "Workshop: Ngoding Cerdas Bareng Python (Clean Code, Secure Code & AI Integration)",
+    period: "NOVEMBER 2024 — JUNI 2025",
+    role: "Ketua Bidang INFOKER & Ketua Pelaksana",
+    company: "LSO KALIBER — Fakultas Teknik UMM",
     description:
-      "Memimpin perencanaan strategis, alokasi sumber daya, dan eksekusi teknis acara workshop pemrograman berskala fakultas.",
+      "Memimpin perancangan program kerja divisi, mengelola kemitraan strategis lembaga, dan memimpin eksekusi acara teknis skala fakultas.",
     contributions: [
-      "Mengordinasikan alur kerja seluruh divisi panitia pelaksana dan pembicara utama.",
-      "Mengelola kelancaran teknis workshop interaktif yang dihadiri 50+ peserta.",
-      "Memastikan implementasi standar acara teknis berjalan sesuai linimasa dan target sasaran.",
+      "Memimpin 6 anggota divisi untuk merencanakan dan menyusun riset konten edukasi IT (EDUTEKNIKA) untuk publikasi organisasi.",
+      "Mengelola kemitraan strategis dan menyusun dokumen MoU dengan pihak kampus (HMIF UMM) serta komunitas eksternal (Malang Hacker Link).",
+      "Menjadi Ketua Pelaksana workshop 'Ngoding Cerdas Bareng Python', memimpin seluruh panitia dari tahap persiapan hingga sukses dieksekusi oleh 50 peserta."
     ],
-    tags: ["Kepemimpinan", "Manajemen Proyek", "Eksekusi Acara"],
+    tags: ["Kepemimpinan", "Kemitraan (MoU)", "Manajemen Proyek"],
     images: [
       { src: "/assets/foto/workshop-leader.jpg", alt: "Dokumentasi Ketua Pelaksana Workshop" },
+      { src: "/assets/certificates/Muchamad_Gilang_Dwi_Saputra_LSO_KALIBER.jpg", alt: "Sertifikat Kepemimpinan INFOKER LSO KALIBER" },
     ],
   },
 ];
@@ -302,41 +308,32 @@ export const CERTIFICATES: Certificate[] = [
     description:
       "Penanganan dukungan konektivitas aman, analisis enkripsi saluran komunikasi, dan verifikasi sertifikat digital.",
   },
-  {
-    id: "cert-kaliber-infoker",
-    name: "Ketua Bidang Informasi & Kerjasama (INFOKER)",
-    issuer: "LSO KALIBER — Universitas Muhammadiyah Malang",
-    category: "Kepemimpinan",
-    image: "/assets/certificates/Muchamad_Gilang_Dwi_Saputra_LSO_KALIBER.jpg",
-    description:
-      "Penghargaan kepemimpinan atas pencapaian mengarahkan strategi publikasi teknis dan kemitraan organisasi periode 2024–2025.",
-  },
 ];
 
 export const SKILLS_CATEGORIES = [
   {
-    title: "Network Engineering",
+    title: "Network Engineering & Hardware",
     skills:
-      "Computer Networking · TCP/IP Stack · LAN/Wi-Fi Architecture · VLAN Segmentation · Inter-VLAN Routing · MikroTik RouterOS · Cisco Packet Tracer · Network Diagnostics & Troubleshooting",
+      "Infrastruktur LAN/WLAN · TCP/IP · VLAN · Routing & Switching · Troubleshooting & Monitoring Jaringan · MikroTik · TP-Link · Huawei · ZTE · Cisco Packet Tracer",
   },
   {
-    title: "Cybersecurity & Defense",
+    title: "Cybersecurity & Pentesting",
     skills:
-      "Network Security · Web Application Vulnerability Assessment · Penetration Testing Fundamentals · Nmap Scanning · Wireshark Packet Analysis · Cryptographic Password Hashing (Bcrypt, Argon2, PBKDF2)",
+      "Network Security · Web Application Security · Penetration Testing · Nmap · Wireshark · inSSIDer · Burp Suite · John The Ripper · Hashcat",
   },
   {
-    title: "Development & Databases",
+    title: "Cryptography & Data Security",
     skills:
-      "Python · PHP · MySQL · Role-Based Access Control (RBAC) · Secure Authentication · Session Security · Input Sanitization & Validation",
+      "Password Hashing (MD5, SHA-256, SHA-512) · Advanced Cryptography (Bcrypt, Argon2, PBKDF2) · Role-Based Access Control (RBAC) · Secure Session Management",
   },
   {
-    title: "Operating Systems & Admin",
+    title: "Development & Systems",
     skills:
-      "Linux Systems (Ubuntu/Debian) · Windows Server/Desktop · CLI Administration · Environment Troubleshooting",
+      "Python (Scripting/Automation) · PHP · MySQL · HTML/CSS · JavaScript · Linux OS · Windows OS · Git & GitHub · Vercel · Tailwind CSS",
   },
   {
-    title: "Leadership & Management",
+    title: "Soft Skills",
     skills:
-      "Kepemimpinan Teknis · Manajemen Acara Strategis · Koordinasi Tim · Pemecahan Masalah Analitis · Komunikasi Profesional",
+      "Kepemimpinan & Koordinasi Tim · Komunikasi Profesional · Manajemen Proyek & Acara · Analytical Problem Solving · Critical Thinking · Adaptability",
   },
 ];
