@@ -28,7 +28,6 @@ export const PROFILE = {
   cvPath: "/CV_Muchamad_Gilang_Dwi_Saputra.pdf",
   linkedin: "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
   github: "https://github.com/muchamad-gilang-dwi-saputra",
-  instagram: "https://www.instagram.com/muchamad_gilang_dwi_saputra",
   role: "Cyber Security & Network Engineer | S1 Informatika (Cum Laude) | Qualys & Fortinet Certified",
   bio: "Lulusan S1 Informatika (Cum Laude) dengan spesialisasi di bidang Keamanan Siber dan Infrastruktur Jaringan. Memegang lisensi sertifikasi global dari Qualys, Fortinet, dan OPSWAT.",
 };
@@ -124,6 +123,51 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS: Project[] = [
+  {
+    id: "noc-dashboard",
+    title: "Enterprise NOC & Uptime Monitoring Dashboard",
+    category: "Network Operations & Security",
+    role: "MODUL UTAMA",
+    description:
+      "Sistem pemantauan jaringan real-time untuk ICMP Latency dan Throughput. Menampilkan metrik ketersediaan host (uptime) dan analisis jitter jaringan secara langsung untuk memitigasi downtime infrastruktur kritis (SIMRS/ERP).",
+    coverImage: "/assets/projects/Enterprise NOC & Uptime Monitoring Dashboard.jpg",
+    techStack: ["Python", "Streamlit", "Plotly", "psutil", "Nmap"],
+    externalLink: "https://github.com/muchamad-gilang-dwi-saputra/noc-network-dashboard",
+    date: "2026",
+  },
+  {
+    id: "network-auto-backup",
+    title: "Automated Network Config Backup & Versioning",
+    category: "Network Automation",
+    role: "MODUL INFRASTRUKTUR",
+    description:
+      "Sistem otomatisasi pencadangan konfigurasi router multi-vendor (MikroTik/Cisco) secara terjadwal. Terintegrasi dengan GitHub (Version Controller) untuk disaster recovery dan notifikasi Telegram real-time.",
+    coverImage: "/assets/projects/project-auto-backup.jpg",
+    techStack: ["Python", "Netmiko", "Git", "Telegram API"],
+    date: "2026",
+  },
+  {
+    id: "rbac-audit-trail",
+    title: "Secure RBAC Identity & Immutable Audit Trail",
+    category: "Cybersecurity",
+    role: "MODUL KEAMANAN",
+    description:
+      "Implementasi riset kriptografi SINTA 3 ke dalam sistem manajemen hak akses enterprise. Dilengkapi pencatatan log aktivitas persisten (Audit Trail) untuk mencegah manipulasi data oleh internal.",
+    coverImage: "/assets/projects/project-rbac.jpg",
+    techStack: ["Python", "SQLite", "SHA-256", "Streamlit"],
+    date: "2026",
+  },
+  {
+    id: "smart-helpdesk-bot",
+    title: "Smart IT Helpdesk Bot & Auto-Triage System",
+    category: "IT Support Automation",
+    role: "MODUL OPERASIONAL",
+    description:
+      "Bot Telegram interaktif untuk efisiensi IT Support (Helpdesk). Mampu melakukan Auto-Triage (ping dan diagnostik awal) otomatis sebelum menerbitkan tiket ke teknisi saat terjadi kendala hardware/jaringan.",
+    coverImage: "/assets/projects/project-helpdesk.jpg",
+    techStack: ["Python", "Telebot", "ICMP Automation", "SQLite"],
+    date: "2026",
+  },
   {
     id: "simpeg-karyawan",
     title: "SIMPEG — Portal Karyawan",
@@ -331,6 +375,7 @@ export const SKILLS_CATEGORIES = [
     skills:
       "Python (Scripting/Automation) · PHP · MySQL · HTML/CSS · JavaScript · Linux OS · Windows OS · Git & GitHub · Vercel · Tailwind CSS",
   },
+  
   {
     title: "Soft Skills",
     skills:

@@ -16,8 +16,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
         <motion.a href="#home" whileHover={{ scale: 1.05 }} className="flex items-center gap-3 font-bold tracking-tight">
-          <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#8b1c1c]/40 bg-[#8b1c1c]/10 text-[#ef4444] shadow-[0_0_20px_rgba(139,28,28,0.3)]">MG</span>
-          <span className="text-lg tracking-wider text-white">GILANG<span className="text-[#ef4444] animate-pulse">.</span></span>
+          <span className="text-lg tracking-wider text-white">PORTOFOLIO GILANG<span className="text-[#ef4444] animate-pulse"></span></span>
         </motion.a>
 
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-300 xl:flex">

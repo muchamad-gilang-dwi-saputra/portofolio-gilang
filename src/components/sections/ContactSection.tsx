@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PROFILE, CONTENT } from "@/data/portfolio";
-import { MailIcon, LinkedinIcon, GithubIcon, InstagramIcon, ExternalLinkIcon } from "../ui/Icons";
+import { MailIcon, LinkedinIcon, GithubIcon, ExternalLinkIcon } from "../ui/Icons";
 
 export default function ContactSection() {
   return (
@@ -20,7 +20,6 @@ export default function ContactSection() {
                 { label: "Email", href: `mailto:${PROFILE.email}`, icon: <MailIcon className="w-5 h-5 text-[#ef4444]" /> },
                 { label: "LinkedIn", href: PROFILE.linkedin, icon: <LinkedinIcon className="w-5 h-5 text-[#0A66C2]" /> },
                 { label: "GitHub", href: PROFILE.github, icon: <GithubIcon className="w-5 h-5 text-white" /> },
-                { label: "Instagram", href: PROFILE.instagram, icon: <InstagramIcon className="w-5 h-5 text-[#E4405F]" /> },
               ].map((item, i) => (
                 <motion.a key={i} whileHover={{ scale: 1.05, borderColor: "#8b1c1c" }} whileTap={{ scale: 0.95 }} href={item.href} target="_blank" rel="noopener noreferrer" className="flex justify-between items-center rounded-2xl border border-white/10 bg-white/[0.03] p-4 font-bold text-slate-200 hover:bg-[#8b1c1c]/20 hover:text-white transition shadow-md group">
                   <div className="flex items-center gap-3">{item.icon} <span>{item.label}</span></div>
