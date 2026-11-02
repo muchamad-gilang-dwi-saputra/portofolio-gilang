@@ -147,14 +147,15 @@ export const PROJECTS: Project[] = [
     date: "2026",
   },
   {
-    id: "rbac-audit-trail",
-    title: "Secure RBAC Identity & Immutable Audit Trail",
-    category: "Cybersecurity",
-    role: "MODUL KEAMANAN",
+    id: "cryptographic-hash-auditor",
+    title: "Sistem Pemeriksa Kekuatan Sandi & Enkripsi",
+    category: "Cybersecurity & Cryptography",
+    role: "RISET TERAPAN SINTA 3 SAYA",
     description:
-      "Implementasi riset kriptografi SINTA 3 ke dalam sistem manajemen hak akses enterprise. Dilengkapi pencatatan log aktivitas persisten (Audit Trail) untuk mencegah manipulasi data oleh internal.",
-    coverImage: "/assets/projects/project-rbac.jpg",
-    techStack: ["Python", "SQLite", "SHA-256", "Streamlit"],
+      "Aplikasi pengujian kerumitan kata sandi (Entropi Shannon) dan komparasi latensi enkripsi (Bcrypt, Argon2id, SHA-256, MD5). Dilengkapi analisis ketahanan peretasan real-time serta fitur ekspor laporan kepatuhan ISO 27001 dalam format JSON.",
+    coverImage: "/assets/projects/foto-cryptographic-hash-auditor.jpg",
+    techStack: ["Python", "Streamlit", "Argon2", "Bcrypt", "Plotly", "ISO 27001"],
+    externalLink: "https://github.com/muchamad-gilang-dwi-saputra/cryptographic-hash-auditor.git", // Sesuaikan dengan repo spesifiknya
     date: "2026",
   },
   {
@@ -168,39 +169,7 @@ export const PROJECTS: Project[] = [
     techStack: ["Python", "Telebot", "ICMP Automation", "SQLite"],
     date: "2026",
   },
-  {
-    id: "simpeg-karyawan",
-    title: "SIMPEG — Portal Karyawan",
-    category: "Web Development",
-    role: "MODUL 01",
-    description:
-      "Portal mandiri karyawan untuk pengajuan izin, pemantauan riwayat kerja, dan akses enkapsulasi data sesuai otorisasi akun.",
-    coverImage: "/assets/projects/project-1.jpg",
-    techStack: ["PHP", "MySQL", "RBAC", "Validasi Form"],
-    date: "2025",
-  },
-  {
-    id: "simpeg-hrd",
-    title: "SIMPEG — Konsol Administrasi",
-    category: "Web Development",
-    role: "MODUL 02",
-    description:
-      "Konsol manajemen HRD untuk verifikasi berkas, pemrosesan persetujuan bertingkat, dan pengolahan data kepegawaian.",
-    coverImage: "/assets/projects/project-2.jpg",
-    techStack: ["PHP", "MySQL", "Otomatisasi Alur", "Filter Data"],
-    date: "2025",
-  },
-  {
-    id: "simpeg-direktur",
-    title: "SIMPEG — Dashboard Eksekutif",
-    category: "Web Development",
-    role: "MODUL 03",
-    description:
-      "Dashboard eksekutif untuk pengawasan tingkat tinggi, ringkasan indikator kinerja, dan pengambilan keputusan berbasis data.",
-    coverImage: "/assets/projects/project-3.jpg",
-    techStack: ["PHP", "MySQL", "Pelaporan Eksekutif", "UI/UX"],
-    date: "2025",
-  },
+
 ];
 
 export const TECHNICAL_PROJECTS = [

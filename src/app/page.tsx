@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useSyncExternalStore } from "react";
 import Navbar from "@/components/ui/Navbar";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import ImageModal from "@/components/ui/ImageModal";
@@ -8,17 +8,27 @@ import ImageModal from "@/components/ui/ImageModal";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
+import PublicationSection from "@/components/sections/PublicationSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import ExpertiseSection from "@/components/sections/ExpertiseSection";
 import ContactSection from "@/components/sections/ContactSection";
 
+// Helper aman hidrasi untuk deteksi Client Side (Lolos aturan ESLint React 19)
+const subscribe = () => () => {};
+function useIsClient() {
+  return useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false
+  );
+}
+
 export default function Home() {
-  const [previewImage, setPreviewImage] = useState<{ src: string; alt: string } | null>(null);
+  const [previewImage, setPreviewImage] = useState<{ src: string; alt: string; title?: string; desc?: string; link?: string } | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [isMounted, setIsMounted] = useState(false);
+  const isMounted = useIsClient();
 
   useEffect(() => {
-    setIsMounted(true);
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
@@ -54,6 +64,7 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection onImageClick={setPreviewImage} />
         <PortfolioSection onImageClick={setPreviewImage} />
+        <PublicationSection />
         <ExpertiseSection onImageClick={setPreviewImage} />
         <ContactSection />
       </main>
