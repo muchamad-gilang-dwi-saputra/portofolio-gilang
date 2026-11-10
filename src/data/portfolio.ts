@@ -56,10 +56,9 @@ export const CONTENT = {
   },
   aboutTitle: "Membangun & Mengamankan Infrastruktur Digital.",
   aboutDescriptions: [
-    "Halo, perkenalkan saya Gilang. Sebagai lulusan S1 Informatika, ketertarikan utama saya ada di dunia infrastruktur jaringan dan keamanan siber. Buat saya, mengamankan sistem itu bukan sekadar menjalankan program otomatis, tapi lebih kepada memahami cara kerja jaringan tersebut dari dasar, lalu mengunci celahnya sebelum pihak lain menemukannya.",
-    "Semasa kuliah, saya banyak menghabiskan waktu untuk meriset keamanan data. Salah satu hasilnya adalah publikasi riset komparasi algoritma kriptografi password di Jurnal SINTA 3. Namun, karena sadar bahwa teori akademik harus selalu dibarengi praktik nyata, saya memutuskan untuk mengambil ujian lisensi global dari Qualys, Fortinet, dan OPSWAT, serta menyelesaikan berbagai modul operasional jaringan dari Cisco.",
-    "Bicara soal pengalaman lapangan, saya pernah terjun langsung membantu tim IT PDTS KBS saat program magang. Di sana, saya ikut menangani operasional jaringan harian perusahaan, mulai dari troubleshooting LAN/WLAN, menggunakan TP-Link untuk jaringan MikroTik, hingga mengonfigurasi modem keluaran Huawei dan ZTE.",
-    "Di luar urusan teknis, saya adalah orang yang senang berkolaborasi dan ngobrol dengan banyak orang. Pengalaman menjadi Ketua Pelaksana workshop IT kampus dan memimpin divisi organisasi melatih saya untuk bisa berkomunikasi dengan baik dan mengelola tim. Sekarang, saya sangat siap untuk membawa energi positif dan skill teknis ini ke lingkungan kerja profesional.",
+    "Saya lulusan S1 Informatika (Cum Laude) yang berfokus pada Infrastruktur Jaringan dan Keamanan Siber. Bagi saya, mengamankan sistem bukan sekadar menjalankan skrip otomatis, melainkan memahami arsitektur jaringan secara mendalam dan menutup celah sebelum ancaman muncul.",
+    "Fondasi teori saya dibuktikan lewat publikasi riset Jurnal SINTA 3 tentang enkripsi sandi dan deretan sertifikasi global dari Cisco, Fortinet, Qualys, serta OPSWAT. Secara praktis, saya berpengalaman langsung di PDTS KBS mengelola operasional jaringan harian, troubleshooting LAN/WLAN, hingga konfigurasi perangkat multi-vendor (MikroTik, Huawei, ZTE).",
+    "Di luar bidang teknis, pengalaman memimpin divisi organisasi dan menjadi Ketua Pelaksana workshop IT mengasah kemampuan komunikasi serta manajemen tim saya. Saya siap membawa kombinasi keahlian teknis dan energi positif ini untuk menjaga stabilitas operasional IT perusahaan.",
   ],
   expTitle: "Pengalaman Profesional, Rekayasa Teknis, & Kepemimpinan",
   projTitle: "Sistem Manajemen Informasi Pegawai (SIMPEG) Berbasis Peran",
@@ -71,9 +70,9 @@ export const CONTENT = {
   techProjTitle: "Implementasi Keamanan & Jaringan Terkontrol",
   skillsTitle: "Skills",
   credTitle: "Sertifikasi Profesional & Kredensial Resmi",
-  contactTitle: "Mari Membangun Sinergi & Koneksi Profesional",
+  contactTitle: "Mari Terhubung & Bicara Peluang Kerja",
   contactDesc:
-    "Terbuka untuk diskusi teknis, kolaborasi proyek cybersecurity, manajemen infrastruktur jaringan, serta peluang karir tingkat profesional.",
+    "Saya siap berkontribusi penuh untuk posisi IT Support, Network Engineer,Network Security, dan NOC. Silakan hubungi saya untuk mendiskusikan bagaimana kualifikasi saya dapat menjawab kebutuhan tim Anda.",
 };
 
 export const EXPERIENCES = [
