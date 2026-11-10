@@ -5,6 +5,7 @@ export interface Project {
   role: string;
   description: string;
   coverImage: string;
+  images?: string[]; // <--- Tambahkan ini untuk menampung banyak gambar
   techStack: string[];
   externalLink?: string;
   date: string;
@@ -26,7 +27,8 @@ export const PROFILE = {
   phone: "085736426514",
   location: "Jombang, Jawa Timur, Indonesia",
   cvPath: "/CV_Muchamad_Gilang_Dwi_Saputra.pdf",
-  linkedin: "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
+  linkedin:
+    "https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/",
   github: "https://github.com/muchamad-gilang-dwi-saputra",
   role: "Cyber Security & Network Engineer | S1 Informatika (Cum Laude) | Qualys & Fortinet Certified",
   bio: "Lulusan S1 Informatika (Cum Laude) dengan spesialisasi di bidang Keamanan Siber dan Infrastruktur Jaringan. Memegang lisensi sertifikasi global dari Qualys, Fortinet, dan OPSWAT.",
@@ -57,7 +59,7 @@ export const CONTENT = {
     "Halo, perkenalkan saya Gilang. Sebagai lulusan S1 Informatika, ketertarikan utama saya ada di dunia infrastruktur jaringan dan keamanan siber. Buat saya, mengamankan sistem itu bukan sekadar menjalankan program otomatis, tapi lebih kepada memahami cara kerja jaringan tersebut dari dasar, lalu mengunci celahnya sebelum pihak lain menemukannya.",
     "Semasa kuliah, saya banyak menghabiskan waktu untuk meriset keamanan data. Salah satu hasilnya adalah publikasi riset komparasi algoritma kriptografi password di Jurnal SINTA 3. Namun, karena sadar bahwa teori akademik harus selalu dibarengi praktik nyata, saya memutuskan untuk mengambil ujian lisensi global dari Qualys, Fortinet, dan OPSWAT, serta menyelesaikan berbagai modul operasional jaringan dari Cisco.",
     "Bicara soal pengalaman lapangan, saya pernah terjun langsung membantu tim IT PDTS KBS saat program magang. Di sana, saya ikut menangani operasional jaringan harian perusahaan, mulai dari troubleshooting LAN/WLAN, menggunakan TP-Link untuk jaringan MikroTik, hingga mengonfigurasi modem keluaran Huawei dan ZTE.",
-    "Di luar urusan teknis, saya adalah orang yang senang berkolaborasi dan ngobrol dengan banyak orang. Pengalaman menjadi Ketua Pelaksana workshop IT kampus dan memimpin divisi organisasi melatih saya untuk bisa berkomunikasi dengan baik dan mengelola tim. Sekarang, saya sangat siap untuk membawa energi positif dan skill teknis ini ke lingkungan kerja profesional."
+    "Di luar urusan teknis, saya adalah orang yang senang berkolaborasi dan ngobrol dengan banyak orang. Pengalaman menjadi Ketua Pelaksana workshop IT kampus dan memimpin divisi organisasi melatih saya untuk bisa berkomunikasi dengan baik dan mengelola tim. Sekarang, saya sangat siap untuk membawa energi positif dan skill teknis ini ke lingkungan kerja profesional.",
   ],
   expTitle: "Pengalaman Profesional, Rekayasa Teknis, & Kepemimpinan",
   projTitle: "Sistem Manajemen Informasi Pegawai (SIMPEG) Berbasis Peran",
@@ -89,17 +91,40 @@ export const EXPERIENCES = [
       "SIMPEG Modul 01 (Portal Karyawan): Merancang fitur mandiri pengajuan izin, pemantauan riwayat kerja, dan enkapsulasi akses data sesuai otorisasi akun.",
       "SIMPEG Modul 02 (Konsol Administrasi HRD): Membangun konsol verifikasi berkas, pemrosesan persetujuan bertingkat, dan pengolahan data kepegawaian.",
       "SIMPEG Modul 03 (Dashboard Eksekutif Direksi): Membuat dashboard pengawasan tingkat tinggi, ringkasan indikator kinerja, dan pelaporan keputusan berbasis data.",
-      "Presentasi Eksekutif: Mempresentasikan hasil evaluasi infrastruktur dan arsitektur web SIMPEG di hadapan Tim IT, HRD, dan Direktur Utama."
+      "Presentasi Eksekutif: Mempresentasikan hasil evaluasi infrastruktur dan arsitektur web SIMPEG di hadapan Tim IT, HRD, dan Direktur Utama.",
     ],
-    tags: ["MikroTik", "Huawei", "ZTE", "Wireshark", "PHP & MySQL", "RBAC", "SIMPEG / HRIS"],
+    tags: [
+      "MikroTik",
+      "Huawei",
+      "ZTE",
+      "Wireshark",
+      "PHP & MySQL",
+      "RBAC",
+      "SIMPEG / HRIS",
+    ],
     images: [
       { src: "/assets/foto/magang.jpg", alt: "Kolaborasi Tim IT Magang" },
-      { src: "/assets/foto/internship-discussion.jpg", alt: "Inspeksi & Support Infrastruktur IT" },
-      { src: "/assets/foto/internship-coding.jpg", alt: "Pengembangan Kode Sistem SIMPEG" },
+      {
+        src: "/assets/foto/internship-discussion.jpg",
+        alt: "Inspeksi & Support Infrastruktur IT",
+      },
+      {
+        src: "/assets/foto/internship-coding.jpg",
+        alt: "Pengembangan Kode Sistem SIMPEG",
+      },
       { src: "/assets/foto/magang 2.jpg", alt: "Dokumentasi Operasional IT" },
-      { src: "/assets/projects/project-1.jpg", alt: "SIMPEG — Portal Karyawan" },
-      { src: "/assets/projects/project-2.jpg", alt: "SIMPEG — Konsol Administrasi HRD" },
-      { src: "/assets/projects/project-3.jpg", alt: "SIMPEG — Dashboard Eksekutif" },
+      {
+        src: "/assets/projects/project-1.jpg",
+        alt: "SIMPEG — Portal Karyawan",
+      },
+      {
+        src: "/assets/projects/project-2.jpg",
+        alt: "SIMPEG — Konsol Administrasi HRD",
+      },
+      {
+        src: "/assets/projects/project-3.jpg",
+        alt: "SIMPEG — Dashboard Eksekutif",
+      },
     ],
   },
   {
@@ -112,12 +137,18 @@ export const EXPERIENCES = [
     contributions: [
       "Memimpin 6 anggota divisi untuk merencanakan dan menyusun riset konten edukasi IT (EDUTEKNIKA) untuk publikasi organisasi.",
       "Mengelola kemitraan strategis dan menyusun dokumen MoU dengan pihak kampus (HMIF UMM) serta komunitas eksternal (Malang Hacker Link).",
-      "Menjadi Ketua Pelaksana workshop 'Ngoding Cerdas Bareng Python', memimpin seluruh panitia dari tahap persiapan hingga sukses dieksekusi oleh 50 peserta."
+      "Menjadi Ketua Pelaksana workshop 'Ngoding Cerdas Bareng Python', memimpin seluruh panitia dari tahap persiapan hingga sukses dieksekusi oleh 50 peserta.",
     ],
     tags: ["Kepemimpinan", "Kemitraan (MoU)", "Manajemen Proyek"],
     images: [
-      { src: "/assets/foto/workshop-leader.jpg", alt: "Dokumentasi Ketua Pelaksana Workshop" },
-      { src: "/assets/certificates/Muchamad_Gilang_Dwi_Saputra_LSO_KALIBER.jpg", alt: "Sertifikat Kepemimpinan INFOKER LSO KALIBER" },
+      {
+        src: "/assets/foto/workshop-leader.jpg",
+        alt: "Dokumentasi Ketua Pelaksana Workshop",
+      },
+      {
+        src: "/assets/certificates/Muchamad_Gilang_Dwi_Saputra_LSO_KALIBER.jpg",
+        alt: "Sertifikat Kepemimpinan INFOKER LSO KALIBER",
+      },
     ],
   },
 ];
@@ -130,9 +161,11 @@ export const PROJECTS: Project[] = [
     role: "MODUL UTAMA",
     description:
       "Sistem pemantauan jaringan real-time untuk ICMP Latency dan Throughput. Menampilkan metrik ketersediaan host (uptime) dan analisis jitter jaringan secara langsung untuk memitigasi downtime infrastruktur kritis (SIMRS/ERP).",
-    coverImage: "/assets/projects/Enterprise NOC & Uptime Monitoring Dashboard.jpg",
+    coverImage:
+      "/assets/projects/Enterprise NOC & Uptime Monitoring Dashboard.jpg",
     techStack: ["Python", "Streamlit", "Plotly", "psutil", "Nmap"],
-    externalLink: "https://github.com/muchamad-gilang-dwi-saputra/noc-network-dashboard",
+    externalLink:
+      "https://github.com/muchamad-gilang-dwi-saputra/noc-network-dashboard",
     date: "2026",
   },
   {
@@ -154,22 +187,43 @@ export const PROJECTS: Project[] = [
     description:
       "Aplikasi pengujian kerumitan kata sandi (Entropi Shannon) dan komparasi latensi enkripsi (Bcrypt, Argon2id, SHA-256, MD5). Dilengkapi analisis ketahanan peretasan real-time serta fitur ekspor laporan kepatuhan ISO 27001 dalam format JSON.",
     coverImage: "/assets/projects/foto-cryptographic-hash-auditor.jpg",
-    techStack: ["Python", "Streamlit", "Argon2", "Bcrypt", "Plotly", "ISO 27001"],
-    externalLink: "https://github.com/muchamad-gilang-dwi-saputra/cryptographic-hash-auditor.git", // Sesuaikan dengan repo spesifiknya
+    techStack: [
+      "Python",
+      "Streamlit",
+      "Argon2",
+      "Bcrypt",
+      "Plotly",
+      "ISO 27001",
+    ],
+    externalLink:
+      "https://github.com/muchamad-gilang-dwi-saputra/cryptographic-hash-auditor.git", // Sesuaikan dengan repo spesifiknya
     date: "2026",
   },
   {
-    id: "smart-helpdesk-bot",
-    title: "Smart IT Helpdesk Bot & Auto-Triage System",
-    category: "IT Support Automation",
-    role: "MODUL OPERASIONAL",
+    id: "mini-siem-ips",
+    title: "Enterprise Mini-SIEM & Automated Active Response",
+    category: "Cybersecurity & Network Automation",
+    role: "MODUL KEAMANAN SIBER & IPS",
     description:
-      "Bot Telegram interaktif untuk efisiensi IT Support (Helpdesk). Mampu melakukan Auto-Triage (ping dan diagnostik awal) otomatis sebelum menerbitkan tiket ke teknisi saat terjadi kendala hardware/jaringan.",
-    coverImage: "/assets/projects/project-helpdesk.jpg",
-    techStack: ["Python", "Telebot", "ICMP Automation", "SQLite"],
+      "Sistem Intrusion Detection & Prevention System (IDS/IPS) otomatis berbasis Python & Netmiko. Berfungsi menganalisis log akses secara real-time untuk mendeteksi ancaman SSH Brute-Force, mengeksekusi mitigasi aktif dengan menyuntikkan rule Firewall (Address-List Drop) ke MikroTik RouterOS via SSH, serta menyediakan dashboard monitoring Command Center interaktif berbasis Streamlit.",
+    coverImage: "/assets/projects/mini_siem_ips_1.jpg",
+    images: [
+      "/assets/projects/mini_siem_ips_1.jpg", // Gambar 1: Streamlit Dashboard
+      "/assets/projects/mini_siem_ips_2.jpg", // Gambar 2: CLI SSH MikroTik Verification
+    ],
+    techStack: [
+      "Python 3.12",
+      "Netmiko",
+      "MikroTik RouterOS",
+      "Streamlit",
+      "SSH",
+      "Regex",
+      "Pandas",
+    ],
+    externalLink:
+      "https://github.com/muchamad-gilang-dwi-saputra/Mini-SIEM-IPS.git",
     date: "2026",
   },
-
 ];
 
 export const TECHNICAL_PROJECTS = [
@@ -245,7 +299,8 @@ export const CERTIFICATES: Certificate[] = [
     name: "Network Addressing & Troubleshooting",
     issuer: "Cisco Networking Academy",
     category: "Network Engineering",
-    image: "/assets/certificates/Network_Addressing_and_Basic_Troubleshooting.jpg",
+    image:
+      "/assets/certificates/Network_Addressing_and_Basic_Troubleshooting.jpg",
     description:
       "Penguasaan skema pengalamatan IPv4/IPv6, kalkulasi subnetting presisi, dan analisis diagnostik kendala konektivitas.",
   },
@@ -290,7 +345,8 @@ export const CERTIFICATES: Certificate[] = [
     name: "Networking Devices & Initial Config",
     issuer: "Cisco Networking Academy",
     category: "Network Engineering",
-    image: "/assets/certificates/Networking_Devices_and_Initial_Configuration.jpg",
+    image:
+      "/assets/certificates/Networking_Devices_and_Initial_Configuration.jpg",
     description:
       "Konfigurasi tingkat dasar hingga menengah untuk peranti Switch dan Router Cisco via Command Line Interface (CLI).",
   },
@@ -344,7 +400,7 @@ export const SKILLS_CATEGORIES = [
     skills:
       "Python (Scripting/Automation) · PHP · MySQL · HTML/CSS · JavaScript · Linux OS · Windows OS · Git & GitHub · Vercel · Tailwind CSS",
   },
-  
+
   {
     title: "Soft Skills",
     skills:
